@@ -26,6 +26,6 @@ public class ArrayParameter {
 			System.out.print(a[i]);
 
 		}
-		System.out.println("");
+		System.out.println();
 	}
 }
