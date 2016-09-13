@@ -11,10 +11,14 @@ public class Prob3 {
 		String s = scanner.nextLine();
 		
 		/*  나머지 코드를 구현합니다. */
+		s = s.toUpperCase();
 		char[] a = s.toCharArray();
-		System.out.println(a);
-		for(int i = 0; i < s.length(); i++) {
-			
+//		System.out.println(a);
+		for(int i = 1; i <= s.length(); i++) {
+			for(int j = 0; j < i; j++){
+				System.out.print(a[j]);
+			}
+			System.out.println("");
 			
 		}
 

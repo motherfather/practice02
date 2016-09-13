@@ -5,21 +5,24 @@ import java.util.Scanner;
 public class GoodsApp {
 
 	public static void main(String[] args) {
-//		Goods[] goodsArray = new Goods[3];
+		Goods[] goodsArray = new Goods[3];
 		Scanner scanner = new Scanner(System.in);
 		
 		for(int i = 0; i < 3; i++) {
+			goodsArray[i] = new Goods();
 			String line = scanner.nextLine();
 			String[] infos = line.split(" ");
 			
-			String name = infos[0];
-			int price = Integer.parseInt(infos[1]);
-			int countStock = Integer.parseInt(infos[2]);
-			
-			
-			System.out.println(name + "(가격:" + price + "원)이 " + countStock + "개 입고 되었습니다.");
-			
+			goodsArray[i].setName(infos[0]);
+			goodsArray[i].setPrice(Integer.parseInt(infos[1]));
+			goodsArray[i].setCountStock(Integer.parseInt(infos[2]));
 		}
+		
+	
+		for(int i = 0; i < 3; i++) {
+			System.out.println(goodsArray[i].getName() + "(가격:" + goodsArray[i].getPrice() + "원)이 "
+					+ goodsArray[i].getCountStock() + "개 입고 되었습니다.");
+		}	
 		
 		scanner.close();		
 	}
