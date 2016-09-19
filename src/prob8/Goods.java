@@ -1,8 +1,10 @@
 package prob8;
 
 public class Goods {
-	String name;
-	int price;
+	private String name;
+	private int price;
+	private int countStock;
+	
 	public String getName() {
 		return name;
 	}
@@ -21,6 +23,5 @@ public class Goods {
 	public void setCountStock(int countStock) {
 		this.countStock = countStock;
 	}
-	int countStock;
 
 }

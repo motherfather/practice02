@@ -23,7 +23,7 @@ public class ArrayParameter {
 //			if (a[i] == '.') {
 //				a[i] ='\n';
 //			}
-			System.out.print(a[i]);
+			System.out.println(a[i]);
 
 		}
 		System.out.println();
